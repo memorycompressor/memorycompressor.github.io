@@ -1,11 +1,126 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+---
+title: PCC - Pretraining Context Compressor
+---
 
-## What is Nextra?
+import { Callout } from 'nextra/components'
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+<div style={{
+  textAlign: 'center',
+  padding: '4rem 2rem',
+  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  margin: '-2rem -2rem 2rem -2rem',
+  color: 'white'
+}}>
+  <h1 style={{
+    fontSize: '3rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+    background: 'linear-gradient(45deg, #ffffff, #e0e7ff)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent'
+  }}>
+    PCC: Pretraining Context Compressor
+  </h1>
+  <p style={{
+    fontSize: '1.25rem',
+    marginBottom: '2rem',
+    opacity: 0.9
+  }}>
+    Large Language Models with Embedding-Based Memory
+  </p>
+  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+    <a href="https://opensource.microsoft.com/" style={{
+      background: 'rgba(255,255,255,0.2)',
+      padding: '0.75rem 1.5rem',
+      borderRadius: '8px',
+      textDecoration: 'none',
+      color: 'white',
+      fontWeight: 'bold',
+      backdropFilter: 'blur(10px)',
+      border: '1px solid rgba(255,255,255,0.3)'
+    }}>
+      📄 Read Paper
+    </a>
+    <a href="https://huggingface.co/collections/BroAlanTaps/pcc-682448eed8826f59f72dd2e3" style={{
+      background: 'rgba(255,255,255,0.2)',
+      padding: '0.75rem 1.5rem',
+      borderRadius: '8px',
+      textDecoration: 'none',
+      color: 'white',
+      fontWeight: 'bold',
+      backdropFilter: 'blur(10px)',
+      border: '1px solid rgba(255,255,255,0.3)'
+    }}>
+      🤗 Hugging Face
+    </a>
+    <a href="https://github.com/broalantaps/PCC" style={{
+      background: 'rgba(255,255,255,0.2)',
+      padding: '0.75rem 1.5rem',
+      borderRadius: '8px',
+      textDecoration: 'none',
+      color: 'white',
+      fontWeight: 'bold',
+      backdropFilter: 'blur(10px)',
+      border: '1px solid rgba(255,255,255,0.3)'
+    }}>
+      💻 GitHub
+    </a>
+  </div>
+</div>
 
-## Documentation
+## Overview
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+PCC (Pretraining Context Compressor) is a novel approach for improving the efficiency of large language models through embedding-based memory compression.
+
+<Callout type="info">
+  This research introduces innovative methods for context compression that significantly reduce computational overhead while maintaining model performance.
+</Callout>
+
+## Key Features
+
+- **Embedding-Based Memory**: Advanced memory compression using embedding techniques
+- **Pretraining Optimization**: Optimized for large-scale pretraining scenarios  
+- **Performance Retention**: Maintains model quality while reducing resource usage
+- **Scalable Architecture**: Designed for modern LLM workflows
+
+## Quick Start
+
+Get started with PCC in just a few steps:
+
+1. **Install Dependencies**
+   ```bash
+   pip install pcc-compressor
+   ```
+
+2. **Basic Usage**
+   ```python
+   from pcc import ContextCompressor
+   
+   compressor = ContextCompressor()
+   compressed = compressor.compress(your_context)
+   ```
+
+3. **Integration**
+   ```python
+   # Integrate with your LLM pipeline
+   model = YourLLM()
+   model.set_compressor(compressor)
+   ```
+
+## Resources
+
+- 📄 [Research Paper](https://opensource.microsoft.com/)
+- 🔧 [Checkpoints & Code](https://huggingface.co/collections/BroAlanTaps/pcc-682448eed8826f59f72dd2e3)
+- 💻 [GitHub Repository](https://github.com/broalantaps/PCC)
+- 📚 [Documentation](/about)
+
+## Citation
+
+```bibtex
+@article{pcc2025,
+  title={PCC: Pretraining Context Compressor for Large Language Models with Embedding-Based Memory},
+  author={Your Name},
+  journal={arXiv preprint},
+  year={2025}
+}
+```
